@@ -1,1 +1,56 @@
 /*  your css code here. If applicable */
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.container {
+	text-align: center;
+	width: 300px;
+}
+
+#board {
+	display: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 80px);
+	margin: 20px auto;
+}
+
+.cell {
+	width: 80px;
+	height: 80px;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	cursor: pointer;
+	background-color: pink;
+}
+
+.message {
+	font-size: 18px;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+#players input {
+	margin: 6px 0;
+	padding: 6px;
+	border: 3px solid black;
+}
+
+#players button {
+	background: none;
+	margin-top: 10px;
+	padding: 8px 20px;
+	cursor: pointer;
+	width: 70%;
+	border: 3px solid black;
+	border-radius: 5px;
+}
