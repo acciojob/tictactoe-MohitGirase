@@ -41,7 +41,7 @@ cells.forEach(cell => {
 		cell.textContent = board[index];
 
 		if (checkWinner()) {
-			messageBox.textContent = `${currentPlayer}, congratulations you won!`;
+			messageBox.textContent = `${currentPlayer} congratulations you won!`;
 			gameOver = true;
 			return;
 		}
