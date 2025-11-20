@@ -37,7 +37,7 @@ cells.forEach(cell => {
 
 		if (board[index] !== "") return;
 
-		board[index] = currentPlayer === player1 ? "X" : "O";
+		board[index] = currentPlayer === player1 ? "x" : "o";
 		cell.textContent = board[index];
 
 		if (checkWinner()) {
