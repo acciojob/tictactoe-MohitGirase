@@ -5,8 +5,8 @@ let currentPlayer = "";
 const messageBox = document.querySelector(".message");
 
 document.getElementById("submit").onclick = function () {
-	player1 = document.getElementById("player-1").value.trim();
-	player2 = document.getElementById("player-2").value.trim();
+	player1 = document.getElementById("player1").value.trim();
+	player2 = document.getElementById("player2").value.trim();
 
 	if (!player1 || !player2) {
 		alert("Please enter both player names");
@@ -23,7 +23,6 @@ document.getElementById("submit").onclick = function () {
 const cells = document.querySelectorAll(".cell");
 let board = ["", "", "", "", "", "", "", "", ""];
 let gameOver = false;
-
 const winningPatterns = [
 	[0,1,2], [3,4,5], [6,7,8], // rows
 	[0,3,6], [1,4,7], [2,5,8], // columns
